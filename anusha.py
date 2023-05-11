@@ -249,7 +249,7 @@ def predict_future(Mortality_rate_data, countries, indicators, start_year, end_y
 if __name__ == '__main__':
     # Read the data
     df_years, df_countries = file_read(
-        r"C:\Users\mouli\Downloads\worldbank.csv")
+        r"C:\Users\anusha\Downloads\worldbank.csv")
 
     # subset the data for the indicators of interest and the selected countries
     indicators = [
@@ -270,6 +270,6 @@ print(cluster_centers)
 # plot the results
 plot_clustered_data(df_normalized, cluster_labels, cluster_centers)
 
-predict_future(r"C:\Users\mouli\Downloads\worldbank.csv", [
+predict_future(r"C:\Users\anusha\Downloads\worldbank.csv", [
                'India', 'Bangladesh', 'United States', 'China'], ['Mortality rate, under-5 (per 1,000 live births)'], 1990, 2020)
 map_corr(df, size=8)
